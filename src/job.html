@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white dark:bg-gray-950">
+  <!-- Navbar -->
+  <header id="header" class="group">
+    <nav class="fixed overflow-hidden z-20 w-full border-b bg-white/50 dark:bg-gray-950/50 backdrop-blur-2xl">
+      <div class="px-6 m-auto max-w-6xl 2xl:px-0">
+        <div class="flex flex-wrap items-center justify-between py-2 sm:py-4">
+          <div class="w-full items-center flex justify-between lg:w-auto">
+            <a href="/" aria-label="Your Logo">
+              <img src="img/ankaa-logo.svg" alt="Ankaa Logo" class="h-7">
+            </a>
+            <div class="flex lg:hidden">
+              <button id="menu-btn" aria-label="open menu" class="btn variant-ghost sz-md icon-only relative z-20 -mr-2.5 block cursor-pointer lg:hidden">
+                <svg class="text-title m-auto size-6 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-180 group-data-[state=active]:scale-0 group-data-[state=active]:opacity-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
+                </svg>
+                <svg class="text-title absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-0 group-data-[state=active]:scale-100 group-data-[state=active]:opacity-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="w-full group-data-[state=active]:h-fit h-0 lg:w-fit flex-wrap justify-end items-center space-y-8 lg:space-y-0 lg:flex lg:h-fit md:flex-nowrap">
+            <div class="mt-6 dark:text-body md:-ml-4 lg:pr-4 lg:mt-0">
+              <ul class="space-y-6 tracking-wide text-base lg:text-sm lg:flex lg:space-y-0">
+                <li><a href="/" class="hover:link md:px-4 block"><span>BACK TO HOME</span></a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="py-32">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="text-center">
+          <h2 class="text-title text-4xl font-bold lg:text-5xl">Job Application</h2>
+          <p class="text-body mt-4">Apply for your dream role by selecting the job and submitting your details below.</p>
+        </div>
+
+        <!-- Tabs for Job Selection -->
+        <div class="mt-8 border-b">
+          <nav class="flex space-x-4">
+            <button class="tab-button text-gray-700 dark:text-gray-300 font-medium border-b-2 border-transparent pb-2 focus:outline-none hover:border-indigo-500" data-tab="job1">Frontend Developer</button>
+            <button class="tab-button text-gray-700 dark:text-gray-300 font-medium border-b-2 border-transparent pb-2 focus:outline-none hover:border-indigo-500" data-tab="job2">Backend Developer</button>
+            <button class="tab-button text-gray-700 dark:text-gray-300 font-medium border-b-2 border-transparent pb-2 focus:outline-none hover:border-indigo-500" data-tab="job3">Marketing Specialist</button>
+          </nav>
+        </div>
+
+        <!-- Job Description Section -->
+        <div id="job1" class="tab-content mt-6 hidden">
+          <p class="text-gray-600 dark:text-gray-400">Frontend Developer: Responsible for building amazing user interfaces using modern frameworks like React or Angular.</p>
+        </div>
+        <div id="job2" class="tab-content mt-6 hidden">
+          <p class="text-gray-600 dark:text-gray-400">Backend Developer: Build robust server-side applications and REST APIs to support frontend systems.</p>
+        </div>
+        <div id="job3" class="tab-content mt-6 hidden">
+          <p class="text-gray-600 dark:text-gray-400">Marketing Specialist: Create strategies and campaigns to boost company visibility and revenue.</p>
+        </div>
+
+        <!-- Job Application Form -->
+        <form action="/submit-application" method="POST" enctype="multipart/form-data" class="mt-8 space-y-6 bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
+            <input type="text" id="name" name="name" required class="w-full mt-1 px-4 py-2 rounded-lg border-gray-300 dark:border-gray-700 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:text-gray-300">
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required class="w-full mt-1 px-4 py-2 rounded-lg border-gray-300 dark:border-gray-700 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:text-gray-300">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+            <input type="email" id="email" name="email" required class="w-full mt-1 px-4 py-2 rounded-lg border-gray-300 dark:border-gray-700 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:text-gray-300">
+          </div>
+          <div>
+            <label for="cv" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Upload CV</label>
+            <input type="file" id="cv" name="cv" required class="w-full mt-1 px-4 py-2 rounded-lg border-gray-300 dark:border-gray-700 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:text-gray-300">
+          </div>
+          <button type="submit" class="w-full bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-500">Submit Application</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-6">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-lg font-medium text-gray-900 dark:text-white">
+        &copy; 2025 Ankaa Space and Technologies. All rights reserved.
+      </p>
+      <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+        Empowering humanity with cutting-edge space and technology solutions.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript for Tab Navigation
+    const tabs = document.querySelectorAll(".tab-button");
+    const contents = document.querySelectorAll(".tab-content");
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        contents.forEach((content) => content.classList.add("hidden"));
+        tabs.forEach((btn) => btn.classList.remove("border-indigo-500", "text-indigo-600"));
+
+        document.getElementById(tab.dataset.tab).classList.remove("hidden");
+        tab.classList.add("border-indigo-500", "text-indigo-600");
+      });
+    });
+    tabs[0].click();
+  </script>
+</body>
+
+</html>

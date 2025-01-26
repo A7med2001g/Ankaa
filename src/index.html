@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html data-shade="950" data-rounded="3xlarge" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Ankaa Space & Technology</title>
+    <meta
+      name="description"
+      content="Ankaa Space & Technology: Pioneering new frontiers in exploration and innovation."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/darkfavicon.svg"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Iconify for icons -->
+    <script
+      src="https://code.iconify.design/3/3.1.0/iconify.min.js"
+      defer
+    ></script>
+  </head>
+
+  <body class="bg-white dark:bg-gray-950">
+    <!-- HEADER / NAVBAR -->
+    <header id="header" class="group">
+      <nav
+        class="fixed z-20 w-full border-b bg-white/50 dark:bg-gray-950/50 backdrop-blur-2xl"
+      >
+        <div class="px-6 m-auto max-w-6xl 2xl:px-0">
+          <div
+            class="flex flex-wrap items-center justify-between py-2 sm:py-4"
+          >
+            <!-- LOGO -->
+            <div class="flex w-full items-center justify-between lg:w-auto">
+              <a href="#home" aria-label="Ankaa Logo">
+                <img
+                  src="img/ankaa-logo.svg"
+                  alt="Ankaa Logo"
+                  class="h-7"
+                />
+              </a>
+
+              <!-- MOBILE MENU BUTTON -->
+              <div class="flex lg:hidden">
+                <button
+                  id="menu-btn"
+                  aria-label="open menu"
+                  class="btn variant-ghost sz-md icon-only relative z-20 -mr-2.5 block cursor-pointer lg:hidden"
+                >
+                  <!-- Hamburger Icon -->
+                  <svg
+                    class="text-title m-auto size-6 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-180 group-data-[state=active]:scale-0 group-data-[state=active]:opacity-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 9h16.5m-16.5 6.75h16.5"
+                    ></path>
+                  </svg>
+                  <!-- Close Icon -->
+                  <svg
+                    class="text-title absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-0 group-data-[state=active]:scale-100 group-data-[state=active]:opacity-100"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18 18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- NAV LINKS -->
+            <div
+              class="h-0 w-full flex-wrap items-center justify-end space-y-8 group-data-[state=active]:h-fit lg:h-fit lg:w-fit md:flex-nowrap lg:flex lg:space-y-0"
+            >
+              <div
+                class="mt-6 dark:text-body md:-ml-4 lg:pr-4 lg:mt-0"
+              >
+                <ul
+                  class="space-y-6 text-base tracking-wide lg:text-sm lg:flex lg:space-y-0"
+                >
+                  <li>
+                    <a
+                      href="#home"
+                      class="block md:px-4 transition-colors duration-300 hover:text-blue-600"
+                      >HOME</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#about"
+                      class="block md:px-4 transition-colors duration-300 hover:text-blue-600"
+                      >ABOUT US</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#sister"
+                      class="block md:px-4 transition-colors duration-300 hover:text-blue-600"
+                      >SISTER COMPANIES</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- BUTTONS -->
+              <div
+                class="flex w-full flex-col items-center space-y-2 gap-2 border-t pt-6 pb-4 lg:w-fit lg:flex-row lg:space-y-0 lg:border-l lg:border-t-0 lg:pt-0 lg:pb-0 lg:pl-2"
+              >
+                <!-- Jobs Page Link -->
+                <a
+                  href="job.html"
+                  class="btn variant-neutral sz-sm"
+                >
+                  <span>Jobs</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <!-- HOME SECTION -->
+    <main class="overflow-hidden">
+      <section
+        id="home"
+        class="relative bg-cover bg-center scroll-mt-24"
+        style="background-image: url('img/back.png');"
+      >
+        <div class="relative pt-24 pb-24 lg:pt-28">
+          <div class="mx-auto max-w-7xl px-6 md:px-12">
+            <div class="text-center sm:mx-auto sm:w-10/12 lg:w-4/5">
+              <h1
+                class="mt-8 text-4xl font-semibold text-white md:text-5xl xl:text-5xl xl:leading-tight"
+              >
+                Empowering
+                <br class="hidden sm:block" />
+                Tomorrow, Today.
+              </h1>
+              <p
+                class="mx-auto mt-8 hidden max-w-2xl text-lg text-white sm:block"
+              >
+                As a pioneering space and tech company, we propel
+                humanity into a new era of exploration and
+                innovation—bridging the gap between present challenges
+                and future possibilities.
+              </p>
+              <div class="mt-8 flex flex-col items-center gap-4">
+                <!-- Example "Contact Us" button; link or phone as desired -->
+                <a
+                  href="#about"
+                  class="btn variant-primary sz-lg"
+                >
+                  <span class="text-nowrap">Contact Us</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+                <!-- about us section -->
+
+
+                <section id="about" class="py-32 scroll-mt-24">
+                  <div class="mx-auto max-w-5xl px-6">
+                    <!-- Section Heading -->
+                    <div class="text-center">
+                      <h2 class="text-4xl font-semibold text-title lg:text-5xl text-balance">
+                        About Us
+                      </h2>
+                      <p class="mt-4 text-body">
+                        Built to cover your needs—today and tomorrow.
+                      </p>
+                    </div>
+                
+                    <!-- 6 Services Cards -->
+                    <div class="mt-16 grid gap-8 sm:grid-cols-2 md:grid-cols-2">
+                      <!-- Card 1: Aerial & Space Services -->
+                      <div class="rounded-card border bg-ui p-6">
+                        <div class="mb-4 flex items-center space-x-3">
+                          <span class="iconify text-2xl" data-icon="mdi:satellite-variant"></span>
+                          <h3 class="text-xl font-semibold text-title">Aerial & Space Services</h3>
+                        </div>
+                        <p class="text-sm">
+                          The Aerial Services comprehensive solution offered by Ankaa leverages cutting-edge 
+                          drone & space technology to provide versatile aerial data acquisition, analysis, 
+                          and insights for a wide range of industries.
+                        </p>
+                        <ul class="mt-4 list-disc list-inside text-sm leading-6">
+                          <li>Aerial Surveying & Mapping</li>
+                          <li>Construction Site & Environmental Monitoring</li>
+                          <li>3D / 5D Modelling and Mapping</li>
+                          <li>Photography & Videography (TV, Real Estate, Events)</li>
+                        </ul>
+                        <p class="mt-4 italic text-sm">Aerial & Space Services Image</p>
+                      </div>
+                
+                      <!-- Card 2: Drone Services -->
+                      <div class="rounded-card border bg-ui p-6">
+                        <div class="mb-4 flex items-center space-x-3">
+                          <span class="iconify text-2xl" data-icon="mdi:quadcopter"></span>
+                          <h3 class="text-xl font-semibold text-title">Drone Services</h3>
+                        </div>
+                        <p class="text-sm">
+                          Survey, inspection and monitoring service provided by Ankaa harnesses 
+                          cutting-edge drone technology to revolutionize infrastructure inspection 
+                          and monitoring.
+                        </p>
+                        <ul class="mt-4 list-disc list-inside text-sm leading-6">
+                          <li>Agricultural Service & Precision Crop Spraying</li>
+                          <li>Disaster Response & Damage Assessment</li>
+                          <li>Power Line & Oil/Gas Pipeline Inspection</li>
+                          <li>Emergency Medical Supply Delivery</li>
+                        </ul>
+                        <p class="mt-4 italic text-sm">Drone services image</p>
+                      </div>
+                
+                      <!-- Card 3: Aviation Services -->
+                      <div class="rounded-card border bg-ui p-6">
+                        <div class="mb-4 flex items-center space-x-3">
+                          <span class="iconify text-2xl" data-icon="mdi:airport"></span>
+                          <h3 class="text-xl font-semibold text-title">Aviation Services</h3>
+                        </div>
+                        <p class="text-sm">
+                          Elevating aviation through AI and robotics, Ankaa offers innovative solutions 
+                          that redefine flight operations and airport management.
+                        </p>
+                        <ul class="mt-4 list-disc list-inside text-sm leading-6">
+                          <li>PAPI calibration by Drones</li>
+                          <li>IFP Design & Review</li>
+                          <li>ILS & Radar System (EPC)</li>
+                          <li>Airport Survey & eTOD</li>
+                          <li>Flight Inspection and Validation</li>
+                        </ul>
+                        <p class="mt-4 italic text-sm">Aviation Image</p>
+                      </div>
+                
+                      <!-- Card 4: Smart Cities Solutions -->
+                      <div class="rounded-card border bg-ui p-6">
+                        <div class="mb-4 flex items-center space-x-3">
+                          <span class="iconify text-2xl" data-icon="mdi:city"></span>
+                          <h3 class="text-xl font-semibold text-title">Smart Cities Solutions</h3>
+                        </div>
+                        <p class="text-sm">
+                          Leveraging drone technology to enhance urban efficiency, safety and sustainability 
+                          through advanced data analysis and smart urban planning.
+                        </p>
+                        <ul class="mt-4 list-disc list-inside text-sm leading-6">
+                          <li>Border Patrol & Facility Security</li>
+                          <li>Urban Planning & Traffic Management</li>
+                          <li>Satellite Imaging & Data Acquisition</li>
+                          <li>Environmental Monitoring Solutions</li>
+                        </ul>
+                        <p class="mt-4 italic text-sm">Smart cities solutions image</p>
+                      </div>
+                
+                      <!-- Card 5: Robotic and Subsea Services -->
+                      <div class="rounded-card border bg-ui p-6">
+                        <div class="mb-4 flex items-center space-x-3">
+                          <span class="iconify text-2xl" data-icon="mdi:robot-industrial-outline"></span>
+                          <h3 class="text-xl font-semibold text-title">Robotic and Subsea Services</h3>
+                        </div>
+                        <p class="text-sm">
+                          AI-equipped drones and subsea solutions offering innovative underwater exploration, 
+                          maintenance, and data collection services.
+                        </p>
+                        <ul class="mt-4 list-disc list-inside text-sm leading-6">
+                          <li>Tunnel & Pipeline Inspections</li>
+                          <li>Offshore Operations Coordination</li>
+                          <li>Subsea Support for Marine Archaeology</li>
+                          <li>Military Grade Custom Solutions</li>
+                        </ul>
+                        <p class="mt-4 italic text-sm">Icon of Robotic and Subsea Services</p>
+                      </div>
+                
+                      <!-- Card 6: Mobile & Web Development -->
+                      <div class="rounded-card border bg-ui p-6">
+                        <div class="mb-4 flex items-center space-x-3">
+                          <span class="iconify text-2xl" data-icon="mdi:code-braces"></span>
+                          <h3 class="text-xl font-semibold text-title">Mobile & Web Development</h3>
+                        </div>
+                        <p class="text-sm">
+                          Full-stack development creating responsive web applications and native mobile 
+                          solutions that drive digital transformation.
+                        </p>
+                        <ul class="mt-4 list-disc list-inside text-sm leading-6">
+                          <li>Custom Web Applications & PWAs</li>
+                          <li>iOS/Android Native Development</li>
+                          <li>AI-Powered Chatbots & Automation</li>
+                          <li>Cloud Integration & DevOps</li>
+                          <li>UI/UX Design & Prototyping</li>
+                        </ul>
+                        <p class="mt-4 italic text-sm">Development Process Diagram</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+      
+
+      <!-- COMPANY NUMBERS SECTION -->
+      <section class="py-20 scroll-mt-24">
+        <div class="mx-auto max-w-5xl space-y-16 px-6">
+          <div class="relative z-10 mx-auto max-w-xl space-y-6 text-center">
+            <h2
+              class="text-4xl font-medium text-title lg:text-5xl"
+            >
+              Our Impact
+            </h2>
+            <p class="text-body">
+              With our extensive experience, we’ve achieved:
+            </p>
+          </div>
+
+          <div
+            class="grid gap-12 divide-y md:divide-x md:divide-y-0 md:grid-cols-3 md:gap-2 *:text-center"
+          >
+            <div class="space-y-4">
+              <div class="text-title text-5xl font-bold">
+                +120
+              </div>
+              <p class="text-body">Projects Completed</p>
+            </div>
+            <div class="space-y-4">
+              <div class="text-title text-5xl font-bold">8K</div>
+              <p class="text-body">Active Users</p>
+            </div>
+            <div class="space-y-4">
+              <div class="text-title text-5xl font-bold">
+                +500
+              </div>
+              <p class="text-body">Powered Apps</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- APPLICATIONS DEVELOPED SECTION -->
+      <section class="pb-36 scroll-mt-24">
+        <div class="mx-auto max-w-6xl px-6">
+          <!-- Section Header -->
+          <div class="text-center">
+            <h2 class="text-3xl font-semibold text-gray-800">
+              Applications Developed
+            </h2>
+            <p class="mt-6 text-gray-600">
+              United by a vision and driven by innovation: see how we
+              empower excellence together.
+            </p>
+          </div>
+
+          <!-- Center the grid items -->
+          <div
+            class="mt-12 grid grid-cols-2 justify-items-center gap-6 sm:grid-cols-3 lg:grid-cols-5"
+          >
+            <!-- Sample Company 1 -->
+            <div class="text-center">
+              <a
+                href="#"
+                title="Company 1"
+                class="flex justify-center"
+              >
+                <div
+                  class="flex h-24 w-24 items-center justify-center rounded-full bg-[#00274d]"
+                >
+                  <img
+                    alt="Company 1"
+                    src="./img/taqa.svg"
+                    class="h-16 w-16 object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <p class="mt-2 text-sm font-medium text-gray-700">
+                Names Bank
+              </p>
+            </div>
+            
+            <!-- Sample Company 2 -->
+            <div class="text-center">
+                <a
+                  href="#"
+                  title="Company 3"
+                  class="flex justify-center"
+                >
+                  <div
+                    class="flex h-24 w-24 items-center justify-center rounded-full bg-[#00274d]"
+                  >
+                    <img
+                      alt="Company 3"
+                      src="./img/taqa.svg"
+                      class="h-16 w-16 object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
+                <p class="mt-2 text-sm font-medium text-gray-700">
+                  Fleet Management
+                </p>
+              </div>
+            
+
+            <!-- Sample Company 2 -->
+            <div class="text-center">
+              <a
+                href="#"
+                title="Company 3"
+                class="flex justify-center"
+              >
+                <div
+                  class="flex h-24 w-24 items-center justify-center rounded-full bg-[#00274d]"
+                >
+                  <img
+                    alt="Company 3"
+                    src="./img/taqa.svg"
+                    class="h-16 w-16 object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <p class="mt-2 text-sm font-medium text-gray-700">
+                OMSAR
+              </p>
+            </div>
+
+            <!-- Sample Company 3 -->
+            <div class="text-center">
+              <a
+                href="#"
+                title="Company 4"
+                class="flex justify-center"
+              >
+                <div
+                  class="flex h-24 w-24 items-center justify-center rounded-full bg-[#00274d]"
+                >
+                  <img
+                    alt="Company 4"
+                    src="./img/taqa.svg"
+                    class="h-16 w-16 object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <p class="mt-2 text-sm font-medium text-gray-700">
+                M567
+              </p>
+            </div>
+
+            <!-- Sample Company 4 -->
+            <div class="text-center">
+              <a
+                href="#"
+                title="Company 5"
+                class="flex justify-center"
+              >
+                <div
+                  class="flex h-24 w-24 items-center justify-center rounded-full bg-[#00274d]"
+                >
+                  <img
+                    alt="Company 5"
+                    src="./img/taqa.svg"
+                    class="h-16 w-16 object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <p class="mt-2 text-sm font-medium text-gray-700">
+                OBW
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SISTER COMPANIES SECTION -->
+      <section id="sister" class="pb-36 scroll-mt-24">
+        <div class="mx-auto max-w-6xl px-6 text-center">
+          <!-- Iconify Script (Add to Head) -->
+          <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+      
+          <!-- Section Header -->
+          <h2 class="text-4xl font-semibold text-gray-800">Sister Companies</h2>
+          <p class="mt-4 text-lg text-gray-600">
+            Meet our network of innovative sister companies, each contributing to a shared vision of excellence.
+          </p>
+      
+          <!-- Companies List -->
+          <div class="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+      
+            <!-- Ankaa Space & Technology -->
+            <div class="text-center group transition-transform hover:scale-105">
+              <a href="https://www.ankaa.cm" target="_blank" class="block">
+                <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-[#00274d] shadow-lg group-hover:shadow-xl">
+                  <img 
+                    src="./img/ankaa.svg" 
+                    alt="Ankaa Logo" 
+                    class="h-16 w-16 object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Ankaa Space & Technology</h3>
+              <p class="mt-2 text-sm text-gray-600">
+                Pioneers in robotics and AI, reshaping industries through cutting-edge automation.
+              </p>
+              <div class="mt-4 flex justify-center space-x-4">
+                <a href="mailto:contact@ankaa.cm" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="fluent:mail-24-filled"></span>
+                </a>
+                <a href="https://www.instagram.com/ankaa_cm" target="_blank" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="ri:instagram-fill"></span>
+                </a>
+                <a href="https://www.linkedin.com/in/ankaa-cm/" target="_blank" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="ri:linkedin-fill"></span>
+                </a>
+              </div>
+            </div>
+      
+            <!-- STAR DRONES -->
+            <div class="text-center group transition-transform hover:scale-105">
+              <a href="https://www.stardrones.com" target="_blank" class="block">
+                <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-[#00274d] shadow-lg group-hover:shadow-xl">
+                  <img 
+                    src="./img/taqa.svg" 
+                    alt="STAR DRONES Logo" 
+                    class="h-16 w-16 object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">STAR DRONES</h3>
+              <p class="mt-2 text-sm text-gray-600">
+                Advanced UAV solutions for agriculture, surveillance, and logistics.
+              </p>
+              <div class="mt-4 flex justify-center space-x-4">
+                <a href="mailto:sales@stardrones.com" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="fluent:mail-24-filled"></span>
+                </a>
+                <a href="https://www.instagram.com/standrones11" target="_blank" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="ri:instagram-fill"></span>
+                </a>
+                <a href="https://linkedin.com/company/stardrones" target="_blank" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="ri:linkedin-fill"></span>
+                </a>
+              </div>
+            </div>
+      
+            <!-- Visionary Digital Solutions -->
+            <div class="text-center group transition-transform hover:scale-105">
+              <a href="https://vds.marketing" target="_blank" class="block">
+                <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-[#00274d] shadow-lg group-hover:shadow-xl">
+                  <img 
+                    src="./img/taqa.svg" 
+                    alt="Visionary Logo" 
+                    class="h-16 w-16 object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">Visionary Digital</h3>
+              <p class="mt-2 text-sm text-gray-600">
+                Full-spectrum digital marketing, AI-driven analytics, and brand transformation.
+              </p>
+              <div class="mt-4 flex justify-center space-x-4">
+                <a href="mailto:hello@vds.marketing" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="fluent:mail-24-filled"></span>
+                </a>
+                <a href="https://www.instagram.com/vds.marketinghub" target="_blank" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="ri:instagram-fill"></span>
+                </a>
+                <a href="https://www.linkedin.com/company/visionary-digital-solutions" target="_blank" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="ri:linkedin-fill"></span>
+                </a>
+              </div>
+            </div>
+      
+            <!-- GIS Hub -->
+            <div class="text-center group transition-transform hover:scale-105">
+              <a href="https://www.gishub.om" target="_blank" class="block">
+                <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-[#00274d] shadow-lg group-hover:shadow-xl">
+                  <img 
+                    src="./img/taqa.svg" 
+                    alt="GIS Hub Logo" 
+                    class="h-16 w-16 object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">GIS Hub</h3>
+              <p class="mt-2 text-sm text-gray-600">
+                Geospatial intelligence experts delivering real-time mapping and data analytics.
+              </p>
+              <div class="mt-4 flex justify-center space-x-4">
+                <a href="mailto:support@gishub.om" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="fluent:mail-24-filled"></span>
+                </a>
+                <a href="https://instagram.com/gishub_om" target="_blank" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="ri:instagram-fill"></span>
+                </a>
+                <a href="https://www.linkedin.com/company/gis-hub" target="_blank" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="ri:linkedin-fill"></span>
+                </a>
+              </div>
+            </div>
+      
+            <!-- TAQA -->
+            <div class="text-center group transition-transform hover:scale-105">
+              <a href="https://www.taqa.com" target="_blank" class="block">
+                <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-[#00274d] shadow-lg group-hover:shadow-xl">
+                  <img 
+                    src="./img/taqa.svg" 
+                    alt="TAQA Logo" 
+                    class="h-16 w-16 object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">TAQA</h3>
+              <p class="mt-2 text-sm text-gray-600">
+                Leading sustainable energy solutions and automation for an eco-friendly future.
+              </p>
+              <div class="mt-4 flex justify-center space-x-4">
+                <a href="mailto:info@taqa.com" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="fluent:mail-24-filled"></span>
+                </a>
+                <a href="https://www.instagram.com/taqa_om" target="_blank" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="ri:instagram-fill"></span>
+                </a>
+                <a href="https://linkedin.com/company/taqa-energy" target="_blank" class="text-blue-600 hover:text-blue-800">
+                  <span class="iconify h-5 w-5" data-icon="ri:linkedin-fill"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-100 dark:bg-gray-800 py-6">
+      <div class="mx-auto max-w-6xl px-6 text-center">
+        <p
+          class="text-lg font-medium text-gray-900 dark:text-white"
+        >
+          &copy; 2025 Ankaa Space & Technology. All rights reserved.
+        </p>
+        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+          Empowering humanity with cutting-edge space and technology
+          solutions.
+        </p>
+      </div>
+    </footer>
+
+    <!-- MAIN SCRIPT -->
+    <script type="module" src="./main.js"></script>
+
+    <!-- SMOOTH SCROLL & NAV HIGHLIGHT SCRIPT -->
+    <script>
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          // Ignore if the href is just '#'
+          if (this.getAttribute("href") === "#") return;
+          e.preventDefault();
+
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+
+      // IntersectionObserver to highlight active nav link
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll("nav a[href^='#']");
+
+      function setActiveLink(id) {
+        navLinks.forEach((link) => {
+          link.classList.toggle(
+            "text-blue-600", // highlight class
+            link.getAttribute("href") === `#${id}`
+          );
+        });
+      }
+
+      const observerOptions = {
+        rootMargin: "-50% 0px -50% 0px", // triggers near middle of viewport
+        threshold: 0,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveLink(entry.target.id);
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+    </script>
+  </body>
+</html>
